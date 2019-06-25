@@ -18,7 +18,7 @@ padding: 10px 0;
 <body>
 <h1>Board Write</h1>
 
-<form action="./boardWrite" method="post">
+<form action="./noticeWrite" method="post">
 <input type="text" name="num" placeholder="num">
 <input type="text" name="title" placeholder="title">
 <textarea rows="" cols="" name="contents"></textarea>

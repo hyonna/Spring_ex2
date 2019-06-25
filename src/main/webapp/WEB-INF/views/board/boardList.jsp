@@ -10,5 +10,7 @@
 
 <h1>Board List</h1>
 
+<a href="./noticeWrite">Write</a>
+
 </body>
 </html>
