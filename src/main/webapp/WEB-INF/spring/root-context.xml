@@ -4,5 +4,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Wheel wheel = new Wheel -->
+	<bean class="com.iu.car.Wheel" id="wheel">
+		<property name="brand">
+			<!-- wheel.setBrand("KUMHO")와 동일 -->
+			<value>KUMHO</value>
+		</property>
+		<property name="size">
+			<value>15</value>
+		</property>
+	</bean>
+	
+	<!-- Car car = new Car -->
+	<bean class="com.iu.car.Car" id="car">
+		<property name="wheel" ref="wheel"></property>
+	</bean>
 		
 </beans>
